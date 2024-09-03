@@ -1,0 +1,123 @@
+.info-title {
+    color: #F2F2F2;
+    font-size: 35px;
+    position: relative; 
+    padding-left: 15px; 
+}
+
+.info-title::before {
+    content: ''; 
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 5px; 
+    height: 100%; 
+    background-color: #F47D3A; 
+}
+
+.paragraph-main {
+    color: #F2F2F2;
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.about-section {
+    background-color: #1E1E1E;
+    padding: 20px;
+    height: 450px;
+    border-top: 2px solid #6e310d; 
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 340px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite; /* Adiciona animação infinita */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-13px); /* Move para cima */
+    }
+    100% {
+        transform: translateY(0); /* Volta para a posição inicial */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        margin-left: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .about-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        margin-left: 0;
+    }
+
+    .paragraph-main {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+   
+}
+
+@media screen and (max-width: 576px) {
+    .info-title {
+        font-size: 28px;
+    }
+
+    .paragraph-main {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    .about-section {
+        padding: 30px 15px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/header-section.css">
+    <link rel="stylesheet" href="css/about-section.css">
+    <link rel="stylesheet" href="css/skills-section.css">
+    <link rel="stylesheet" href="css/project-section.css">
+    <link rel="stylesheet" href="./css/footer-section.css">
+</head>
+<body>
+    <header class="site-header">
+        <div id="logo" class="logo-container">
+            <i class="fa-solid fa-crown"></i>
+        </div>
+        <nav class="navigation">
+            <a href="#home" class="nav-button">Home</a>
+            <a href="#about" class="nav-button">Sobre</a>
+            <a href="#skills" class="nav-button">Habilidades</a>
+            <a href="#projects" class="nav-button">Projetos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <img src="img/programador.png" alt="Pessoa no computador" class="profile-pic">
+                <div class="text-content">
+                    <h1 class="info-title">Sobre mim</h1>
+                    <p class="paragraph-main">Olá, sou Renan Souto. Desde cedo, tive uma conexão com a tecnologia, mas foi em 2024 que descobri meu fascínio pela programação ao iniciar o curso de Análise e Desenvolvimento de Sistemas. Estou sempre em busca de aprimorar minhas habilidades e transformar minhas ideias em soluções reais através do código.</p>
+                    <p class="paragraph-main">Ao longo da minha jornada tenho focado na área de front-end e estou sempre em busca de novos desafios que me permitam crescer e amadurecer como profissional. Minha meta é impactar positivamente o mundo da tecnologia com minhas contribuições.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2 id="skills-title">Habilidades</h2>
+            <div class="skills-container">
+                <div class="description-skills" id="description">
+                    <p id="placeholder-text">/* Clique em alguma habilidade para ler a descrição */</p>
+                </div>
+                <div class="icons-skills">
+                    <div class="logotipos-1">
+                        <img src="img/logo-html.png" alt="HTML" data-text="HTML foi a primeira tecnologia relacionada a programação que tive contato, priorizo sempre a acessibilidade e uma estrutura semântica para futuras manuntenções do projeto.">
+                        <img src="img/logo-css.png" alt="CSS" data-text="CSS é minha essencial ferramenta para estilizar meus projetos, buscando sempre deixar o design agradável para o usuário.">
+                        <img id="js-icon" src="img/logo-js.png" alt="JavaScript" data-text="Estou em fase de aprendizado de JavaScript, buscando sempre aprimorar minhas habilidades e expandir meu conhecimento em relação a linguagem, visando mais dinâmica aos projetos.">
+                    </div>
+                    <div class="logotipos-2">
+                        <img src="img/logo-git.png" alt="Git" data-text="Com uma base de conhecimento em GIT, utilizo o controle de versão para gerenciar branches e colaborar com os projetos de forma eficiente.">
+                        <img src="img/logo-github.png" alt="GitHub" data-text="GitHub é a plataforma na qual utilizo para hospedar repositórios e gerenciar o versionamento de forma eficiente.">
+                        <img src="img/logo-sql.png" alt="SQL" data-text="Estou em fase de aprendizado de SQL, buscando expandir meus conhecimentos, utilizo a linguagem para gerenciar e consultar banco de dados de projetos.">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projetos-section">
+            <h1 id="title-project-section">Projetos</h1>
+            <div class="projeto-card" onclick="openProject('projeto-cbahost')">
+                <div class="projeto-info">
+                    <h2 class="projeto-title">Projeto CBA Host</h2>
+                    <span class="tag">HTML & CSS</span>
+                    <p class="projeto-description">O projeto é um site que vende serviços de hospedagem, com um design atrativo e responsivo. Simples, mas funcional.</p>
+                    <a href="https://cbahost.netlify.app/" target="_blank" class="ver-mais">Ver mais</a>
+                </div>
+                <div id="cba-project-img"></div>
+            </div>
+
+            <div class="projeto-card" onclick="openProject('projeto-cbahost')">
+                <div class="projeto-info">
+                    <h2 class="projeto-title">Projeto formulário</h2>
+                    <span class="tag">HTML & CSS</span>
+                    <p class="projeto-description">Meu primeiro projeto, é uma página para cadastrar seu veículo para venda, onde coloquei em prática os primeiros conhecimentos de HTML e CSS.</p>
+                    <a href="https://formtosell.netlify.app/" target="_blank" class="ver-mais">Ver mais</a>
+                </div>
+                <div id="form-project-img"></div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Renan Souto <i id="footer-icon" class="fa-brands fa-square-web-awesome"></i></p>
+            <p>Email: <a href="mailto:renansoutooliveira@gmail.com">renansoutooliveira@gmail.com</a></p>
+        </footer>
+    </main>
+</body>
+</html>

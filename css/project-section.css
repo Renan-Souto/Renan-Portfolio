@@ -1,0 +1,181 @@
+.projetos-section {
+    padding: 50px 20px;
+    background-color: #1E1E1E;
+}
+
+#title-project-section {
+    font-size: 34px;
+    color: #F2F2F2;
+    text-align: center;
+    margin-bottom: 55px;
+    margin-top: 10px;
+}
+
+#title-project-section::after {
+    content: '';
+    display: block;
+    width: 137px; 
+    height: 2px; 
+    background-color: #F47D3A; 
+    margin: 0 auto; 
+    animation: blinkLine 1.5s infinite; 
+}
+
+@keyframes blinkLine {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.projeto-card {
+    background-color: #E4E1E2;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.projeto-info {
+    padding: 20px;
+    flex: 1;
+}
+.projeto-title {
+    color: #FF4E1D;
+    margin-top: 0;
+}
+.tag {
+    background-color: #FF4E1D;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.projeto-description {
+    color: #333;
+    margin-bottom: 20px;
+}
+.ver-mais {
+    background-color: #FF4E1D;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.ver-mais:hover {
+    background-color: #F47D3A;
+}
+
+#cba-project-img {
+    flex: 1;
+    background-image: url(../img/project-cbahost.png);
+    background-size: cover;
+    min-height: 250px;
+}
+
+#form-project-img {
+    flex: 1;
+    background-image: url(../img/form-project.png);
+    background-size: cover;
+    min-height: 250px;
+}
+
+@media (max-width: 768px) {
+    .projetos-section {
+        padding: 40px 15px;
+    }
+
+    #title-project-section {
+        font-size: 32px;
+        margin-bottom: 45px;
+    }
+
+    #title-project-section::after {
+        width: 110px;
+        height: 2px;
+    }
+
+    .projeto-card {
+        max-width: 600px;
+    }
+
+    #cba-project-img, #form-project-img {
+        min-height: 200px;
+    }
+
+    .projeto-info {
+        padding: 15px;
+    }
+
+    .projeto-title {
+        font-size: 1.4em;
+    }
+
+    .tag {
+        font-size: 0.75em;
+        padding: 4px 8px;
+    }
+
+    .ver-mais {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projetos-section {
+        padding: 30px 10px;
+    }
+
+    #title-project-section {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    #title-project-section::after {
+        width: 90px;
+        height: 2px;
+    }
+
+    .projeto-card {
+        max-width: 95%;
+        margin-bottom: 30px;
+    }
+
+    #cba-project-img, #form-project-img {
+        min-height: 150px;
+    }
+
+    .projeto-info {
+        padding: 10px;
+    }
+
+    .projeto-title {
+        font-size: 1.2em;
+    }
+
+    .tag {
+        font-size: 0.7em;
+        padding: 3px 6px;
+    }
+
+    .ver-mais {
+        padding: 7px 14px;
+    }
+}

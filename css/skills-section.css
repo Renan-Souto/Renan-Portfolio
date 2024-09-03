@@ -1,0 +1,252 @@
+#skills {
+    padding: 20px;
+    background-color: #2C2C2C;
+    height: 450px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+#skills-title {
+    text-align: center;
+    color: #F2F2F2;
+    margin-bottom: 20px;
+    font-size: 34px;
+    position: relative; 
+}
+
+#skills-title::after {
+    content: '';
+    display: block;
+    width: 190px; 
+    height: 2px; 
+    background-color: #F47D3A; 
+    position: absolute;
+    bottom: -5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 1.5s infinite; 
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#placeholder-text {
+    color: #F5F5F5;
+    font-size: 19px;
+    position: absolute;
+    padding: 80px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#description.show-description #placeholder-text {
+    opacity: 0; /* Torna o texto invisível durante a transição */
+}
+
+#description.show-description #data-text {
+    color: #F5F5F5;
+    font-size: 19px;
+    padding: 80px;
+    opacity: 1; /* Torna o texto do data-text visível durante a transição */
+    transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+}
+
+/* Inicialmente, o texto data-text está invisível */
+#data-text {
+    opacity: 0;
+}
+
+.description-skills {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+}
+
+.icons-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.icons-skills img {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icons-skills img:hover {
+    transform: scale(1.1); 
+}
+
+#js-icon {
+    height: 90px;
+    width: 90px;
+}
+
+.logotipos-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    gap: 20px;
+}
+.logotipos-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .text-content {
+        margin-left: 0;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .description-skills, .icons-skills {
+        width: 100%;
+        padding: 0;
+    }
+
+    .logotipos-1, .logotipos-2 {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .icons-skills img {
+        height: 60px;
+        width: 60px;
+    }
+
+    #js-icon {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .text-content {
+        margin-left: 0;
+    }
+
+    .paragraph-main {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #skills-title {
+        margin-bottom: 30px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    #placeholder-text {
+        font-size: 17px;
+    }
+    .description-skills, .icons-skills {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 35px;
+    }
+
+    .logotipos-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .logotipos-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 102px;
+        margin-top: 30px;
+    }
+
+    .icons-skills img {
+        height: 80px;
+        width: 80px;
+    }
+
+    #js-icon {
+        height: 70px;
+        width: 70px;
+    }
+
+    #skills {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info-title {
+        font-size: 28px;
+    }
+
+    .paragraph-main {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    #skills-title {
+        font-size: 27px;
+        margin-bottom: 70px;
+    }
+
+    #placeholder-text, #description.show-description #data-text {
+        font-size: 16px;
+        padding: 15px;
+        margin-bottom: 80px;
+    }
+
+    .icons-skills img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .logotipos-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .logotipos-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 52px;
+        margin-top: 30px;
+    }
+
+    #js-icon {
+        height: 78px;
+        width: 78px;
+    }
+
+}
