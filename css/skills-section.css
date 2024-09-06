@@ -122,6 +122,10 @@
 
 @media screen and (max-width: 768px) {
 
+    #skills-title {
+        margin-top: 0px;
+    }
+
     .text-content {
         margin-left: 0;
     }
@@ -137,6 +141,13 @@
 
     #placeholder-text, #description.show-description {
         max-height: 50px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #placeholder-text, #description.show-description #data-text {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .logotipos-1, .logotipos-2 {
