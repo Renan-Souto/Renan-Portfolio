@@ -8,7 +8,7 @@
 .info-title::before {
     content: ''; 
     position: absolute;
-    left: 0; 
+    left:0; 
     top: 0;
     width: 5px; 
     height: 100%; 
@@ -43,7 +43,7 @@
     height: auto;
     margin-right: 40px;
     border-radius: 50%;
-    animation: float 3s ease-in-out infinite; /* Adiciona animação infinita */
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -59,6 +59,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .info-title {
+        text-align: center; 
+        display: inline-block; 
+    }
 
     .about-container {
         flex-direction: column;
@@ -79,6 +84,11 @@
 
 
 @media screen and (max-width: 900px) {
+
+    .info-title {
+        text-align: center; 
+        display: inline-block; 
+    }
 
     .about-section {
         height: auto;
@@ -108,8 +118,11 @@
 }
 
 @media screen and (max-width: 576px) {
+   
     .info-title {
         font-size: 28px;
+        text-align: center; 
+        display: inline-block; 
     }
 
     .paragraph-main {
