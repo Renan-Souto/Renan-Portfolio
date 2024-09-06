@@ -237,6 +237,10 @@
         font-size: 28px;
     }
 
+    .description-skills {
+        max-height: 100px;
+    }
+
     #skills-title {
         font-size: 27px;
         margin-bottom: 50px;
@@ -279,4 +283,21 @@
         width: 78px;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+
+    #skills-title {
+        font-size: 27px;
+        margin-bottom:40px;
+    }
+
+    .description-skills {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #placeholder-text, #description.show-description #data-text {
+        margin-bottom: 40px;
+    }
 }
