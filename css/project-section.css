@@ -97,6 +97,13 @@
     min-height: 250px;
 }
 
+#to-do-list-img {
+    flex: 1;
+    background-image: url(../img/to-do-list.png);
+    background-size: cover;
+    min-height: 250px;
+}
+
 @media (max-width: 768px) {
     .projetos-section {
         padding: 40px 15px;
